@@ -32,5 +32,37 @@ a {
       padding: 60px;
       font: bold 50px/1 "Lato";
       color: #999; }
+  #wrap .swiper-button-next {
+    top: auto;
+    bottom: 5vh;
+    right: 10vw;
+    transform: scale(0.5);
+    filter: brightness(0%);
+    opacity: 0.7; }
+  #wrap .swiper-button-prev {
+    top: auto;
+    bottom: 5vh;
+    left: auto;
+    right: calc(10vw + 50px);
+    transform: scale(0.5);
+    filter: brightness(0%);
+    opacity: 0.7; }
+  #wrap .swiper-pagination {
+    position: absolute;
+    height: 50vh;
+    left: auto;
+    width: auto;
+    right: 10vw;
+    top: 10vh; }
+    #wrap .swiper-pagination span {
+      width: auto;
+      height: auto;
+      background: transparent;
+      border-radius: 0px;
+      margin-left: 60px;
+      opacity: 0.7; }
+      #wrap .swiper-pagination span.swiper-pagination-bullet-active {
+        opacity: 1;
+        font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
