@@ -20,16 +20,16 @@ $font : 'Lato';
         }
 
         &:nth-of-type(1){
-            background:#ebeae9;
+            background-image:url(../img/bg1.jpg);
         }
         &:nth-of-type(2){
             background-image:url(../img/bg2.jpg);
         }
         &:nth-of-type(3){
-            background-image:url(../img/bg3.jpg);
+            background:#fff;
         }
         &:nth-of-type(4){
-            background-image:url(../img/bg4.jpg);
+            background:#fff;
         }
     }
 
@@ -40,21 +40,21 @@ $font : 'Lato';
             top:15vh; 
             .inner{
                 width:100%; height:100%; border:1px solid #999;
-                background:rgba(255,255,255,0.5);
+                background:rgba(255,255,255,0.4);
                 opacity:0.5;
                 backdrop-filter:blur(10px); transition:opacity 1s;
+                .tit{
+                    width:100%; height:80px;
+                    border-bottom:1px solid #999;
+                    h1{
+                        font:bold 80px/80px $font; color:#333;
+                        margin-left:10px;
+                    }
+                }
             }
             &[data-swiper-slide-index="0"]{
                 .inner{
                     width:100%; height:100%;
-                    .portfolio{
-                        width:100%; height:80px;
-                        border-bottom:1px solid #999;
-                        h1{
-                            font:bold 80px/80px $font; color:#333;
-                            margin-left:10px;
-                        }
-                    }
                     .wrap{
                         width:100%; height:calc(100% - 81px);
                         &::after{ content:''; display:block; clear:both; }
@@ -94,6 +94,41 @@ $font : 'Lato';
                             }
                         }
                         
+                    }
+                }
+            }
+            &[data-swiper-slide-index="1"]{
+                .wrap{
+                    width:100%; height:calc(100% - 81px);
+                    &::after{
+                        content:''; display:block; clear:both;
+                    }
+                    article{
+                        float:left;
+                        &:first-child{
+                            width:45%; height:100%;
+                            border-right:1px solid #999;
+                            .txt{
+                                width:100%; height:70%;
+                                border-bottom:1px solid #999;
+                            }
+                            .num{
+                                width:100%; height:30%;
+                                span{
+                                    display:block;
+                                    font:200px/1 $font; color:#ccc;
+                                    text-align:right;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            width:55%; height:100%;
+                            .pic{
+                                width:100%; height:60%;
+                                border-bottom:1px solid #999;
+                                img{ width:100%; height:100%; overflow: hidden;}
+                            }
+                        }
                     }
                 }
             }
