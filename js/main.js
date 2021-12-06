@@ -1,4 +1,4 @@
-const menu = ["ABOUT", "PORTFOLIO", "CONTACT", "News"];
+const menu = ["ABOUT", "PORTFOLIO", "CONTACT"];
 
 const swiper = new Swiper("#wrap", {
     loop : true,

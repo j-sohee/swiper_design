@@ -26,10 +26,7 @@ $font : 'Lato';
             background-image:url(../img/bg2.jpg);
         }
         &:nth-of-type(3){
-            background:#fff;
-        }
-        &:nth-of-type(4){
-            background:#fff;
+            background-image:url(../img/bg3.jpg);
         }
     }
 
@@ -141,6 +138,66 @@ $font : 'Lato';
                 }
             }
 
+            &[data-swiper-slide-index="2"]{
+                .wrap{
+                    width:100%; height:calc(100% - 81px);
+                    &::after{
+                        content:''; display:block; clear:both;
+                    }
+                    .info{
+                        width:40%; height:100%; float:left;
+                        padding:180px 20px 0px 100px;
+                        border-right:1px solid #aaa;
+                        h2{
+                            font:bold 24px/1 $font; color:#111;
+                            margin-bottom:20px;
+                        }
+                        dl{
+                            width:100%; display:inline-block;
+                            dt{
+                                display:inline-block;
+                                width:25%;
+                                font: bold 16px/1 $font; color:#333;
+                                margin-bottom:10px;
+                            }
+                            dd{
+                                display:inline-block;
+                                width:72%;
+                                font:16px/1 $font; color:#333;
+                                margin-bottom:10px;
+                            }
+                        }
+                    }
+
+                    #myform{
+                        width:60%; height:100%; float:left;
+                        padding:100px 0px 0px 60px;
+                        legend{
+                            font:bold 32px/1 $font; color:#333; margin-bottom:20px;
+                        }
+                        article{
+                            width:100%;
+                            label{
+                                display:block;
+                                color:#333;
+                                margin-bottom:5px;
+                                font:bold 14px/1 $font;
+                            }
+                            input[type=text], input[type=email],textarea{
+                                width:80%; height:40px;
+                                border:1px solid #ddd;
+                                font:12px/1 $font; color:#111;
+                                padding:10px; margin-bottom:20px;
+                                resize:none; background:#eee;
+                            }
+                            textarea{
+                                height:100px;
+                            }
+                            
+                        }
+                    }
+                }
+            }
             &.swiper-slide-active .inner{
                 opacity:1;
             }

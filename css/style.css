@@ -10,6 +10,9 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+fieldset {
+  border: none; }
+
 #wrap {
   width: 100%;
   height: 100vh;
@@ -34,9 +37,7 @@ a {
     #wrap .bg li:nth-of-type(2) {
       background-image: url(../img/bg2.jpg); }
     #wrap .bg li:nth-of-type(3) {
-      background: #fff; }
-    #wrap .bg li:nth-of-type(4) {
-      background: #fff; }
+      background-image: url(../img/bg3.jpg); }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
@@ -163,6 +164,66 @@ a {
               #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt a:hover {
                 background: #333;
                 color: #fff; }
+      #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap {
+        width: 100%;
+        height: calc(100% - 81px); }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap .info {
+          width: 40%;
+          height: 100%;
+          float: left;
+          padding: 180px 20px 0px 100px;
+          border-right: 1px solid #aaa; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap .info h2 {
+            font: bold 24px/1 "Lato";
+            color: #111;
+            margin-bottom: 20px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap .info dl {
+            width: 100%;
+            display: inline-block; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap .info dl dt {
+              display: inline-block;
+              width: 25%;
+              font: bold 16px/1 "Lato";
+              color: #333;
+              margin-bottom: 10px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap .info dl dd {
+              display: inline-block;
+              width: 72%;
+              font: 16px/1 "Lato";
+              color: #333;
+              margin-bottom: 10px; }
+        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform {
+          width: 60%;
+          height: 100%;
+          float: left;
+          padding: 100px 0px 0px 60px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform legend {
+            font: bold 32px/1 "Lato";
+            color: #333;
+            margin-bottom: 20px; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article {
+            width: 100%; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article label {
+              display: block;
+              color: #333;
+              margin-bottom: 5px;
+              font: bold 14px/1 "Lato"; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article textarea {
+              width: 80%;
+              height: 40px;
+              border: 1px solid #ddd;
+              font: 12px/1 "Lato";
+              color: #111;
+              padding: 10px;
+              margin-bottom: 20px;
+              resize: none;
+              background: #eee; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="2"] .wrap #myform article textarea {
+              height: 100px; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
   #wrap .swiper-button-next {
