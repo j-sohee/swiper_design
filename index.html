@@ -112,23 +112,20 @@
                         <form action="/" method="get" id="myform">
                             <fieldset>
                                 <legend>Send a message!</legend>
-                                <article class="email">
-                                    <label for="email">
-                                        YOUR EMAIL
-                                    </label>
-                                    <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요">
+                                <article class="useremail">
+                                    <label for="useremail">YOUR EMAIL</label>
+                                    <input type="text" name="useremail" id="useremail" placeholder="이메일을 입력해주세요">
                                 </article>
-                                <article class="name">
-                                    <label for="name">
-                                        YOUR NAME
-                                    </label>
-                                    <input type="text" name="name" id="name" placeholder="이름을 입력해주세요">
+                                <article class="username">
+                                    <label for="username">YOUR NAME</label>
+                                    <input type="text" name="username" id="username" placeholder="이름을 입력해주세요">
                                 </article>
                                 <article class="comments">
-                                    <label for="comments">
-                                        MESSAGE
-                                    </label>
+                                    <label for="comments">MESSAGE</label>
                                     <textarea name="comments" id="comments" cols="30" rows="10" placeholder="메세지를 남겨주세요"></textarea>
+                                </article>
+                                <article class="btn">
+                                    <input type="submit" value="SEND">
                                 </article>
                             </fieldset>
                         </form>

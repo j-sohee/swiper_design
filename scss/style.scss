@@ -171,29 +171,33 @@ $font : 'Lato';
 
                     #myform{
                         width:60%; height:100%; float:left;
-                        padding:100px 0px 0px 60px;
+                        padding:80px 0px 0px 100px;
                         legend{
                             font:bold 32px/1 $font; color:#333; margin-bottom:20px;
                         }
                         article{
                             width:100%;
                             label{
-                                display:block;
-                                color:#333;
-                                margin-bottom:5px;
-                                font:bold 14px/1 $font;
+                                display:block; color:#333;
+                                margin-bottom:5px; font:bold 14px/1 $font;
                             }
-                            input[type=text], input[type=email],textarea{
+                            input[type=text], input[type=email],input[type=submit],textarea{
                                 width:80%; height:40px;
                                 border:1px solid #ddd;
                                 font:12px/1 $font; color:#111;
                                 padding:10px; margin-bottom:20px;
                                 resize:none; background:#eee;
+                                transition:0.5s;
                             }
                             textarea{
                                 height:100px;
                             }
-                            
+                            input[type=submit]{
+                                font-size:14px; cursor:pointer;
+                                &:hover{
+                                    background:#333; color:#fff;
+                                }
+                            }
                         }
                     }
                 }
