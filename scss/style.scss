@@ -100,33 +100,41 @@ $font : 'Lato';
             &[data-swiper-slide-index="1"]{
                 .wrap{
                     width:100%; height:calc(100% - 81px);
-                    &::after{
-                        content:''; display:block; clear:both;
-                    }
                     article{
-                        float:left;
-                        &:first-child{
-                            width:45%; height:100%;
-                            border-right:1px solid #999;
-                            .txt{
-                                width:100%; height:70%;
-                                border-bottom:1px solid #999;
-                            }
-                            .num{
-                                width:100%; height:30%;
-                                span{
-                                    display:block;
-                                    font:200px/1 $font; color:#ccc;
-                                    text-align:right;
-                                }
-                            }
+                        width:100%; height:calc(100% / 3); display:flex;
+                        justify-content:space-evenly;
+                        border-bottom:1px solid #999; padding:20px 10px;
+                        &:last-child{ border-bottom:none; }
+                        span{
+                            display:inline-flex; justify-content: center; align-items:center; width:20vw;
+                            font:60px/1 $font; color:#333;
                         }
-                        &:last-child{
-                            width:55%; height:100%;
-                            .pic{
-                                width:100%; height:60%;
-                                border-bottom:1px solid #999;
-                                img{ width:100%; height:100%; overflow: hidden;}
+                        .pic{
+                            width:30vw; height:100%;
+                            border:1px solid #ddd;
+                            img{ width:100%; height:100%; overflow: hidden;}
+                        }
+                        .txt{
+                            width:100%; padding:15px 20px;
+                            h2{
+                                font:bold 24px/1 $font; color:#111;
+                                margin-bottom:10px; 
+                            }
+                            p{
+                                font:16px/1.4 $font; color:#333;
+                                margin-bottom:20px;
+                            }
+                            a{
+                                display:block;
+                                width:100px; height:30px;
+                                border:1px solid #999; background:#efefef;
+                                font:12px/30px $font; color:#666;
+                                text-align:center; transition:0.5s;
+
+                                &:hover{
+                                    background:#333;
+                                    color:#fff;
+                                }
                             }
                         }
                     }
@@ -150,7 +158,7 @@ $font : 'Lato';
         transform:scale(0.5); filter:brightness(0%); opacity: 0.7;
     }
     .swiper-pagination{
-        position:absolute; height:50vh;left:auto; width:auto; right:20vw; top:5vh; 
+        position:absolute; height:6vh;left:auto; width:auto; right:20vw; top:5vh; 
         span{
             width:auto; height:auto; background:transparent;
             border-radius:0px; margin-left:40px;

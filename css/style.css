@@ -115,39 +115,54 @@ a {
       #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap {
         width: 100%;
         height: calc(100% - 81px); }
-        #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap::after {
-          content: '';
-          display: block;
-          clear: both; }
         #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article {
-          float: left; }
-          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:first-child {
-            width: 45%;
-            height: 100%;
-            border-right: 1px solid #999; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:first-child .txt {
-              width: 100%;
-              height: 70%;
-              border-bottom: 1px solid #999; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:first-child .num {
-              width: 100%;
-              height: 30%; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:first-child .num span {
-                display: block;
-                font: 200px/1 "Lato";
-                color: #ccc;
-                text-align: right; }
+          width: 100%;
+          height: calc(100% / 3);
+          display: flex;
+          justify-content: space-evenly;
+          border-bottom: 1px solid #999;
+          padding: 20px 10px; }
           #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:last-child {
-            width: 55%;
-            height: 100%; }
-            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:last-child .pic {
+            border-bottom: none; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article span {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 20vw;
+            font: 60px/1 "Lato";
+            color: #333; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .pic {
+            width: 30vw;
+            height: 100%;
+            border: 1px solid #ddd; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .pic img {
               width: 100%;
-              height: 60%;
-              border-bottom: 1px solid #999; }
-              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article:last-child .pic img {
-                width: 100%;
-                height: 100%;
-                overflow: hidden; }
+              height: 100%;
+              overflow: hidden; }
+          #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt {
+            width: 100%;
+            padding: 15px 20px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt h2 {
+              font: bold 24px/1 "Lato";
+              color: #111;
+              margin-bottom: 10px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt p {
+              font: 16px/1.4 "Lato";
+              color: #333;
+              margin-bottom: 20px; }
+            #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt a {
+              display: block;
+              width: 100px;
+              height: 30px;
+              border: 1px solid #999;
+              background: #efefef;
+              font: 12px/30px "Lato";
+              color: #666;
+              text-align: center;
+              transition: 0.5s; }
+              #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="1"] .wrap article .txt a:hover {
+                background: #333;
+                color: #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
   #wrap .swiper-button-next {
@@ -167,7 +182,7 @@ a {
     opacity: 0.7; }
   #wrap .swiper-pagination {
     position: absolute;
-    height: 50vh;
+    height: 6vh;
     left: auto;
     width: auto;
     right: 20vw;
