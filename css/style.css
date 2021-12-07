@@ -81,18 +81,23 @@ fieldset {
               border-right: 1px solid #999; }
             #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) {
               width: 50%;
-              border-right: 1px solid #999; }
+              height: 100%;
+              border-right: 1px solid #999;
+              position: relative;
+              bottom: 0;
+              left: 0; }
               #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) .line {
                 width: 100%;
                 height: 300px; }
               #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(2) p {
                 width: 100%;
-                height: 100px;
+                height: 101px;
                 border-top: 1px solid #999;
-                font: bold 90px/100px "Lato";
+                font: bold 90px/101px "Lato";
                 color: #111; }
             #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(3) {
               width: 30%;
+              height: 100%;
               display: flex;
               flex-wrap: wrap; }
               #wrap .swiper-wrapper .swiper-slide[data-swiper-slide-index="0"] .inner .wrap article:nth-of-type(3) h2 {
