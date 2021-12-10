@@ -49,7 +49,7 @@ $font : 'Lato';
                     }
                 }
             }
-            &[data-swiper-slide-index="0"]{
+            &[data-custom-index="0"]{
                 .inner{
                     width:100%; height:100%;
                     .wrap{
@@ -96,7 +96,7 @@ $font : 'Lato';
                     }
                 }
             }
-            &[data-swiper-slide-index="1"]{
+            &[data-custom-index="1"]{
                 .wrap{
                     width:100%; height:calc(100% - 81px);
                     article{
@@ -140,7 +140,7 @@ $font : 'Lato';
                 }
             }
 
-            &[data-swiper-slide-index="2"]{
+            &[data-custom-index="2"]{
                 .wrap{
                     width:100%; height:calc(100% - 81px);
                     &::after{
