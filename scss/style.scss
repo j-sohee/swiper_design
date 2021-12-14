@@ -108,10 +108,13 @@ $font : 'Lato';
                             display:inline-flex; justify-content: center; align-items:center; width:20vw;
                             font:60px/1 $font; color:#333;
                         }
-                        .pic{
+                        .vid{
                             width:30vw; height:100%;
                             border:1px solid #ddd;
-                            img{ width:100%; height:100%; overflow: hidden;}
+                            video{
+                                width:100%; height:100%;
+                                object-fit: contain;
+                            }
                         }
                         .txt{
                             width:100%; padding:15px 20px;

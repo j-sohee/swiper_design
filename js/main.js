@@ -43,6 +43,18 @@ prev.addEventListener("click", activation);
 window.addEventListener("mousewheel", activation);
 swiper.on("slideChangeTransitionEnd", activation);
 
+const items = document.querySelectorAll("video");
+for(let el of items){
+    el.addEventListener("mouseenter", e=>{
+        el.play();
+    });
+}
+for(let el of items){
+    el.addEventListener("mouseleave", e=>{
+        el.pause();
+    });
+}
+
 for(let el of navi){
     el.addEventListener("click", e=>{
         const isOn = e.currentTarget.classList.contatins("swiper-pagination-bullet-active");
