@@ -83,18 +83,18 @@ fieldset {
               width: 50%;
               height: 100%;
               border-right: 1px solid #999;
-              position: relative;
-              bottom: 0;
-              left: 0; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article:nth-of-type(2) .line {
+              position: relative; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article:nth-of-type(2) .txt {
                 width: 100%;
-                height: 300px; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article:nth-of-type(2) p {
-                width: 100%;
-                height: 101px;
-                border-top: 1px solid #999;
-                font: bold 90px/101px "Lato";
-                color: #111; }
+                position: absolute;
+                bottom: 0;
+                left: 0; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article:nth-of-type(2) .txt p {
+                  width: 100%;
+                  height: 110px;
+                  border-top: 1px solid #999;
+                  font: bold 90px/110px "Lato";
+                  color: #111; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="0"] .inner .wrap article:nth-of-type(3) {
               width: 30%;
               height: 100%;
@@ -201,23 +201,23 @@ fieldset {
               font: 16px/1 "Lato";
               color: #333;
               margin-bottom: 10px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form {
           width: 60%;
           height: 100%;
           float: left;
           padding: 80px 0px 0px 100px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform legend {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form legend {
             font: bold 32px/1 "Lato";
             color: #333;
             margin-bottom: 20px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article {
             width: 100%; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article label {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article label {
               display: block;
               color: #333;
               margin-bottom: 5px;
               font: bold 14px/1 "Lato"; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article textarea {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article textarea {
               width: 80%;
               height: 40px;
               border: 1px solid #ddd;
@@ -228,12 +228,12 @@ fieldset {
               resize: none;
               background: #eee;
               transition: 0.5s; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article textarea {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article textarea {
               height: 100px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article input[type=submit] {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit] {
               font-size: 14px;
               cursor: pointer; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #myform article input[type=submit]:hover {
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit]:hover {
                 background: #333;
                 color: #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {

@@ -1,7 +1,7 @@
 const menu = ["ABOUT", "PORTFOLIO", "CONTACT"];
 
 const swiper = new Swiper("#wrap", {
-    loop : true,
+    loop : false,
     slidesPerView : "auto",
     centeredSlides:true,
     spaceBetween:150,

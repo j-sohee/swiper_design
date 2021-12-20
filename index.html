@@ -7,9 +7,12 @@
     <title>swiper</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/form.js"></script>
+    
 </head>
 <body>
     <section id="wrap">
@@ -28,10 +31,11 @@
                     <div class="wrap">
                         <article></article>
                         <article>
-                            <div class="line"></div>
-                            <p>HELLO!</p>
-                            <p>THIS IS MY</p>
-                            <p>PORTFOLIO</p>
+                            <div class="txt">
+                                <p>HELLO!</p>
+                                <p>THIS IS MY</p>
+                                <p>PORTFOLIO</p>
+                            </div>
                         </article>
                         <article>
                             <h2>CREATIVE</h2>
@@ -109,20 +113,28 @@
                                 <dd><a href="https://github.com/j-sohee" target="_blank">https://github.com/j-sohee</a></dd>
                             </dl>
                         </article>
-                        <form action="/" method="get" id="myform">
+                        <form action="/" method="get" id="contact-form">
                             <fieldset>
                                 <legend>Send a message!</legend>
-                                <article class="email">
-                                    <label for="email">YOUR EMAIL</label>
-                                    <input type="text" name="email" id="email" placeholder="이메일을 입력해주세요">
-                                </article>
+
+                                <input type="hidden" name="contact_number">
+
                                 <article class="username">
                                     <label for="username">YOUR NAME</label>
-                                    <input type="text" name="username" id="username" placeholder="이름을 입력해주세요">
+                                    <input type="text" name="to_name" id="username" placeholder="이름을 입력해주세요." required>
                                 </article>
+                                <article class="userphone">
+                                    <label for="userphone">YOUR NUMBER</label>
+                                    <input type="text" name="contact" id="userphone" placeholder="연락처를 입력해주세요." required>
+                                </article>
+                                <article class="email">
+                                    <label for="email">YOUR EMAIL</label>
+                                    <input type="text" name="from_name" id="email" placeholder="이메일을 입력해주세요." required>
+                                </article>
+                                
                                 <article class="comments">
                                     <label for="comments">MESSAGE</label>
-                                    <textarea name="comments" id="comments" cols="30" rows="10" placeholder="메세지를 남겨주세요"></textarea>
+                                    <textarea name="comments" id="message_html" cols="30" rows="10" placeholder="문의하실 내용을 입력해주세요."></textarea>
                                 </article>
                                 <article class="btn">
                                     <input type="submit" value="SEND">
