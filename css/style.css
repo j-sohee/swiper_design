@@ -157,7 +157,7 @@ fieldset {
               color: #333;
               margin-bottom: 20px; }
             #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt a {
-              display: block;
+              display: inline-block;
               width: 100px;
               height: 30px;
               border: 1px solid #999;

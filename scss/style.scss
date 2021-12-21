@@ -80,7 +80,7 @@ $font : 'Lato';
                                     width:100%; height:300px;
                                     font:40px/1 $font; color:#111;
                                     display:flex; justify-content: center;
-                                    align-items: center;
+                                    align-items: center; 
                                     
                                 }
                                 .intro{
@@ -128,7 +128,7 @@ $font : 'Lato';
                                 margin-bottom:20px;
                             }
                             a{
-                                display:block;
+                                display:inline-block;
                                 width:100px; height:30px;
                                 border:1px solid #999; background:#efefef;
                                 font:12px/30px $font; color:#666;

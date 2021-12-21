@@ -36,14 +36,14 @@ const swiper = new Swiper("#wrap", {
 const bgs = document.querySelectorAll(".bg li");
 const prev = document.querySelector(".swiper-button-prev");
 const next = document.querySelector(".swiper-button-next");
-const navi = document.querySelectorAll(".swiper-pagination span")
+const navi = document.querySelectorAll(".swiper-pagination span");
+const items = document.querySelectorAll("video");
 
 next.addEventListener("click", activation);
 prev.addEventListener("click", activation);
 window.addEventListener("mousewheel", activation);
 swiper.on("slideChangeTransitionEnd", activation);
 
-const items = document.querySelectorAll("video");
 for(let el of items){
     el.addEventListener("mouseenter", e=>{
         el.play();
