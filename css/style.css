@@ -188,73 +188,64 @@ fieldset {
                 #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap a:hover, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap a:hover, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap a:hover {
                   background: #ddd;
                   color: #000; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner {
         width: 100%;
-        height: calc(100% - 81px); }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap::after {
-          content: '';
-          display: block;
-          clear: both; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info {
-          width: 40%;
+        height: 100%; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap {
+          width: 100%;
           height: 100%;
-          float: left;
-          padding: 180px 20px 0px 80px;
-          border-right: 1px solid #aaa; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info h2 {
-            font: bold 24px/1 "Lato";
-            color: #111;
-            margin-bottom: 20px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl {
-            width: 100%;
-            display: inline-block; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl dt {
-              display: inline-block;
-              width: 25%;
-              font: bold 16px/1 "Lato";
-              color: #333;
-              margin-bottom: 10px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl dd {
-              display: inline-block;
-              width: 72%;
-              font: 16px/1 "Lato";
-              color: #333;
-              margin-bottom: 10px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form {
-          width: 60%;
-          height: 100%;
-          float: left;
-          padding: 60px 0px 0px 100px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form legend {
-            font: bold 32px/1 "Lato";
-            color: #333;
-            margin-bottom: 20px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article {
-            width: 100%; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article label {
-              display: block;
-              color: #333;
-              margin-bottom: 5px;
-              font: bold 14px/1 "Lato"; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article textarea {
-              width: 80%;
-              height: 40px;
-              border: 1px solid #ddd;
-              font: 12px/1 "Lato";
-              color: #111;
-              padding: 10px;
-              margin-bottom: 20px;
-              resize: none;
-              background: #eee;
-              transition: 0.5s; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article textarea {
-              height: 100px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit] {
-              font-size: 14px;
-              cursor: pointer; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit]:hover {
-                background: #333;
-                color: #fff; }
+          display: flex; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .info {
+            width: 50%;
+            height: 100%;
+            background: #555;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .info > h1 {
+              font: bold 40px/1 "Lato";
+              color: #fff; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form {
+              width: 100%;
+              padding: 0 50px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form legend {
+                font: bold 32px/1 "Lato";
+                color: #333;
+                margin-bottom: 20px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article {
+                width: 100%; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article label {
+                  display: block;
+                  color: #333;
+                  margin-bottom: 5px;
+                  font: bold 14px/1 "Lato"; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article textarea {
+                  width: 100%;
+                  height: 40px;
+                  border: 1px solid #ddd;
+                  font: 12px/1 "Lato";
+                  color: #111;
+                  padding: 10px;
+                  margin-bottom: 20px;
+                  resize: none;
+                  background: #eee;
+                  transition: 0.5s; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article textarea {
+                  height: 100px; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article input[type=submit] {
+                  font-size: 14px;
+                  cursor: pointer; }
+                  #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] > .inner > .wrap .myForm #contact-form article input[type=submit]:hover {
+                    background: #333;
+                    color: #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
         opacity: 1; }
   #wrap .swiper-button-next {

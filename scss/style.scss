@@ -33,6 +33,7 @@ $font : 'Lato';
     .swiper-wrapper{
         width:100%; height:100%; 
         .swiper-slide{
+
             width:70vw; height:70vh; position:relative;
             top:15vh; 
             .inner{
@@ -165,66 +166,53 @@ $font : 'Lato';
             }
 
             &[data-custom-index="4"]{
-                .wrap{
-                    width:100%; height:calc(100% - 81px);
-                    &::after{
-                        content:''; display:block; clear:both;
-                    }
-                    .info{
-                        width:40%; height:100%; float:left;
-                        padding:180px 20px 0px 80px;
-                        border-right:1px solid #aaa;
-                        h2{
-                            font:bold 24px/1 $font; color:#111;
-                            margin-bottom:20px;
-                        }
-                        dl{
-                            width:100%; display:inline-block;
-                            dt{
-                                display:inline-block;
-                                width:25%;
-                                font: bold 16px/1 $font; color:#333;
-                                margin-bottom:10px;
-                            }
-                            dd{
-                                display:inline-block;
-                                width:72%;
-                                font:16px/1 $font; color:#333;
-                                margin-bottom:10px;
+                >.inner{
+                    width:100%; height:100%;
+                    >.wrap{
+                        width:100%; height:100%; display:flex;
+                        .info{
+                            width:50%; height:100%; background:#555;
+                            display:flex; flex-wrap: wrap; align-content: center;
+                            justify-content: center;
+                            >h1{
+                                font:bold 40px/1 $font; color:#fff;
                             }
                         }
-                    }
-
-                    #contact-form{
-                        width:60%; height:100%; float:left;
-                        padding:60px 0px 0px 100px;
-                        legend{
-                            font:bold 32px/1 $font; color:#333; margin-bottom:20px;
-                        }
-                        article{
-                            width:100%;
-                            label{
-                                display:block; color:#333;
-                                margin-bottom:5px; font:bold 14px/1 $font;
-                            }
-                            input[type=text], input[type=email],input[type=submit],textarea{
-                                width:80%; height:40px;
-                                border:1px solid #ddd;
-                                font:12px/1 $font; color:#111;
-                                padding:10px; margin-bottom:20px;
-                                resize:none; background:#eee;
-                                transition:0.5s;
-                            }
-                            textarea{
-                                height:100px;
-                            }
-                            input[type=submit]{
-                                font-size:14px; cursor:pointer;
-                                &:hover{
-                                    background:#333; color:#fff;
+                        .myForm{
+                            width:50%; height:100%;
+                            display:flex; flex-wrap: wrap; justify-content:center; align-content: center;
+                            #contact-form{
+                                width:100%; padding:0 50px;
+                                legend{
+                                    font:bold 32px/1 $font; color:#333; margin-bottom:20px;
+                                }
+                                article{
+                                    width:100%;
+                                    label{
+                                        display:block; color:#333;
+                                        margin-bottom:5px; font:bold 14px/1 $font;
+                                    }
+                                    input[type=text], input[type=email],input[type=submit],textarea{
+                                        width:100%; height:40px;
+                                        border:1px solid #ddd;
+                                        font:12px/1 $font; color:#111;
+                                        padding:10px; margin-bottom:20px;
+                                        resize:none; background:#eee;
+                                        transition:0.5s;
+                                    }
+                                    textarea{
+                                        height:100px;
+                                    }
+                                    input[type=submit]{
+                                        font-size:14px; cursor:pointer;
+                                        &:hover{
+                                            background:#333; color:#fff;
+                                        }
+                                    }
                                 }
                             }
                         }
+                        
                     }
                 }
             }
