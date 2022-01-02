@@ -22,10 +22,10 @@ $font : 'Lato';
         &:nth-of-type(1){
             background-image:url(../img/bg1.jpg);
         }
-        &:nth-of-type(2){
+        &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4){
             background-image:url(../img/bg2.jpg);
         }
-        &:nth-of-type(3){
+        &:nth-of-type(5){
             background-image:url(../img/bg3.jpg);
         }
     }
@@ -33,8 +33,8 @@ $font : 'Lato';
     .swiper-wrapper{
         width:100%; height:100%; 
         .swiper-slide{
-            width:80vw; height:78vh; position:relative;
-            top:11vh; 
+            width:70vw; height:70vh; position:relative;
+            top:15vh; 
             .inner{
                 width:100%; height:100%; border:1px solid #999;
                 background:rgba(255,255,255,0.4);
@@ -97,51 +97,66 @@ $font : 'Lato';
                     }
                 }
             }
-            &[data-custom-index="1"]{
-                .wrap{
-                    width:100%; height:calc(100% - 81px);
+            &[data-custom-index="1"],&[data-custom-index="2"],&[data-custom-index="3"]{
+                .inner{
+                    width:100%; height:100%; display:flex;
                     article{
-                        width:100%; height:calc(100% / 3); display:flex;
-                        justify-content:space-evenly;
-                        border-bottom:1px solid #999; padding:20px 10px;
-                        &:last-child{ border-bottom:none; }
-                        span{
-                            display:inline-flex; justify-content: center; align-items:center; width:15vw;
-                            font:40px/1 $font; color:#333;
-                        }
-                        .pic{
-                            width:30vw; height:100%;
-                            border:1px solid #ddd;
-                            img{
-                                width:100%; height:100%; object-fit: cover; object-position: top;
-                                transition:3s;
-                            }
-                            &:hover{
-                                img{
-                                    object-position: bottom;
+                        width:50%; height:100%; display:flex;
+                        overflow:hidden; 
+
+                        &:nth-of-type(1){
+                            
+                            >.wrap{
+                                width:100%; height:100%; padding:0 50px;
+                                display:flex; justify-content:center; align-content: center; flex-wrap:wrap; 
+                                .main_tit{
+                                    width:100%; margin-bottom:20px;
+                                    span{
+                                        font:bold 50px/1 $font; color:#999;
+                                        margin-bottom:10px;  
+                                    }
+                                    h1{ font:28px/1 $font; color:#333;}
+                                }
+                                .pic{
+                                    width:100%; height:70%; border:1px solid #ddd;
+                                    img{
+                                        width:100%; height:100%;  object-fit: cover; object-position: top; 
+                                    }
+                                    &:hover img{
+                                        object-position:bottom;
+                                        transition:3s;
+                                    }
                                 }
                             }
+                            
                         }
-                        .txt{
-                            width:100%; padding:10px;
-                            h2{
-                                font:bold 24px/1 $font; color:#111;
-                                margin-bottom:10px; 
-                            }
-                            p{
-                                font:14px/1.2 $font; color:#333;
-                                margin-bottom:20px;
-                            }
-                            a{
-                                display:inline-block;
-                                width:100px; height:30px;
-                                border:1px solid #999; background:#efefef;
-                                font:12px/30px $font; color:#666;
-                                text-align:center; transition:0.5s;
-
-                                &:hover{
+                        &:nth-of-type(2){
+                            background:#555;
+                            >.wrap{
+                                width:100%; height:100%;
+                                padding:0 70px; display:flex;
+                                flex-wrap: wrap; 
+                                align-content: center;
+                                h2{
+                                    font:20px/1 $font; color:#ddd;
+                                    margin-bottom:20px;
+                                }
+                                p{
+                                    font:14px/1.6 $font; color:#ccc;
+                                    margin-bottom:20px;
+                                    letter-spacing: 1px;
+                                }
+                                a{
+                                    display:inline-block;
+                                    width:100px; height:30px;
                                     background:#333;
-                                    color:#fff;
+                                    text-align:center;
+                                    font:13px/30px $font; color:#ddd;
+                                    margin-right:10px; transition:0.5s;
+                                    &:hover{
+                                        background:#ddd;
+                                        color:#000; 
+                                    }
                                 }
                             }
                         }
@@ -149,7 +164,7 @@ $font : 'Lato';
                 }
             }
 
-            &[data-custom-index="2"]{
+            &[data-custom-index="4"]{
                 .wrap{
                     width:100%; height:calc(100% - 81px);
                     &::after{

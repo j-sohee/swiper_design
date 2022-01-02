@@ -34,18 +34,18 @@ fieldset {
       opacity: 1; }
     #wrap .bg li:nth-of-type(1) {
       background-image: url(../img/bg1.jpg); }
-    #wrap .bg li:nth-of-type(2) {
+    #wrap .bg li:nth-of-type(2), #wrap .bg li:nth-of-type(3), #wrap .bg li:nth-of-type(4) {
       background-image: url(../img/bg2.jpg); }
-    #wrap .bg li:nth-of-type(3) {
+    #wrap .bg li:nth-of-type(5) {
       background-image: url(../img/bg3.jpg); }
   #wrap .swiper-wrapper {
     width: 100%;
     height: 100%; }
     #wrap .swiper-wrapper .swiper-slide {
-      width: 80vw;
-      height: 78vh;
+      width: 70vw;
+      height: 70vh;
       position: relative;
-      top: 11vh; }
+      top: 15vh; }
       #wrap .swiper-wrapper .swiper-slide .inner {
         width: 100%;
         height: 100%;
@@ -118,110 +118,125 @@ fieldset {
                 justify-content: center;
                 align-items: center;
                 text-align: center; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap {
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner {
         width: 100%;
-        height: calc(100% - 81px); }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article {
-          width: 100%;
-          height: calc(100% / 3);
+        height: 100%;
+        display: flex; }
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article {
+          width: 50%;
+          height: 100%;
           display: flex;
-          justify-content: space-evenly;
-          border-bottom: 1px solid #999;
-          padding: 20px 10px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article:last-child {
-            border-bottom: none; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article span {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 15vw;
-            font: 40px/1 "Lato";
-            color: #333; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .pic {
-            width: 30vw;
+          overflow: hidden; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap {
+            width: 100%;
             height: 100%;
-            border: 1px solid #ddd; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .pic img {
+            padding: 0 50px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .main_tit, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .main_tit, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .main_tit {
+              width: 100%;
+              margin-bottom: 20px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .main_tit span, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .main_tit span, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .main_tit span {
+                font: bold 50px/1 "Lato";
+                color: #999;
+                margin-bottom: 10px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .main_tit h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .main_tit h1, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .main_tit h1 {
+                font: 28px/1 "Lato";
+                color: #333; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .pic, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .pic, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .pic {
+              width: 100%;
+              height: 70%;
+              border: 1px solid #ddd; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .pic img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .pic img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(1) > .wrap .pic:hover img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(1) > .wrap .pic:hover img, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(1) > .wrap .pic:hover img {
+                object-position: bottom;
+                transition: 3s; }
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2), #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2), #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) {
+            background: #555; }
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap {
               width: 100%;
               height: 100%;
-              object-fit: cover;
-              object-position: top;
-              transition: 3s; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .pic:hover img {
-              object-position: bottom; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt {
-            width: 100%;
-            padding: 10px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt h2 {
-              font: bold 24px/1 "Lato";
-              color: #111;
-              margin-bottom: 10px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt p {
-              font: 14px/1.2 "Lato";
-              color: #333;
-              margin-bottom: 20px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt a {
-              display: inline-block;
-              width: 100px;
-              height: 30px;
-              border: 1px solid #999;
-              background: #efefef;
-              font: 12px/30px "Lato";
-              color: #666;
-              text-align: center;
-              transition: 0.5s; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .wrap article .txt a:hover {
+              padding: 0 70px;
+              display: flex;
+              flex-wrap: wrap;
+              align-content: center; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap h2, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap h2 {
+                font: 20px/1 "Lato";
+                color: #ddd;
+                margin-bottom: 20px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap p, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap p {
+                font: 14px/1.6 "Lato";
+                color: #ccc;
+                margin-bottom: 20px;
+                letter-spacing: 1px; }
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap a, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap a, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap a {
+                display: inline-block;
+                width: 100px;
+                height: 30px;
                 background: #333;
-                color: #fff; }
-      #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap {
+                text-align: center;
+                font: 13px/30px "Lato";
+                color: #ddd;
+                margin-right: 10px;
+                transition: 0.5s; }
+                #wrap .swiper-wrapper .swiper-slide[data-custom-index="1"] .inner article:nth-of-type(2) > .wrap a:hover, #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .inner article:nth-of-type(2) > .wrap a:hover, #wrap .swiper-wrapper .swiper-slide[data-custom-index="3"] .inner article:nth-of-type(2) > .wrap a:hover {
+                  background: #ddd;
+                  color: #000; }
+      #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap {
         width: 100%;
         height: calc(100% - 81px); }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap::after {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap::after {
           content: '';
           display: block;
           clear: both; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap .info {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info {
           width: 40%;
           height: 100%;
           float: left;
           padding: 180px 20px 0px 80px;
           border-right: 1px solid #aaa; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap .info h2 {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info h2 {
             font: bold 24px/1 "Lato";
             color: #111;
             margin-bottom: 20px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap .info dl {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl {
             width: 100%;
             display: inline-block; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap .info dl dt {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl dt {
               display: inline-block;
               width: 25%;
               font: bold 16px/1 "Lato";
               color: #333;
               margin-bottom: 10px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap .info dl dd {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap .info dl dd {
               display: inline-block;
               width: 72%;
               font: 16px/1 "Lato";
               color: #333;
               margin-bottom: 10px; }
-        #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form {
+        #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form {
           width: 60%;
           height: 100%;
           float: left;
           padding: 60px 0px 0px 100px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form legend {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form legend {
             font: bold 32px/1 "Lato";
             color: #333;
             margin-bottom: 20px; }
-          #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article {
+          #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article {
             width: 100%; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article label {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article label {
               display: block;
               color: #333;
               margin-bottom: 5px;
               font: bold 14px/1 "Lato"; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article textarea {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=text], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=email], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit], #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article textarea {
               width: 80%;
               height: 40px;
               border: 1px solid #ddd;
@@ -232,12 +247,12 @@ fieldset {
               resize: none;
               background: #eee;
               transition: 0.5s; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article textarea {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article textarea {
               height: 100px; }
-            #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit] {
+            #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit] {
               font-size: 14px;
               cursor: pointer; }
-              #wrap .swiper-wrapper .swiper-slide[data-custom-index="2"] .wrap #contact-form article input[type=submit]:hover {
+              #wrap .swiper-wrapper .swiper-slide[data-custom-index="4"] .wrap #contact-form article input[type=submit]:hover {
                 background: #333;
                 color: #fff; }
       #wrap .swiper-wrapper .swiper-slide.swiper-slide-active .inner {
