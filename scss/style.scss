@@ -46,22 +46,19 @@ $font : 'Lato';
                     display:flex; position:relative;
                     article{
                         height:100%; display:flex; align-content: center; flex-wrap: wrap;
+                        justify-content: center;
                         &:first-child{
                             width:40%;  background:rgba(0,0,0,0.6);
-                            .pic{
-                                width:20%; 
-                                position:absolute; top:50%; left:40%; transform:translate(-45%,-50%); z-index:2; 
                                 h1{
-                                    display:inline-block; padding:20px 10px;
-                                    background:#333; font: bold 50px/1 $font; color:#fff; 
+                                    display:inline-block; padding:20px 0px;
+                                    width:30%; text-align:center;
+                                    background:#333; font: bold 46px/1 $font; color:#fff; z-index:2;
+                                    position:absolute; top:50%; left:39%;
+                                    transform:translate(-40%,-50%);
                                 }
-                                
-                                // img{width:100%; height:100%; object-fit: cover; object-position: bottom; filter: grayscale(1);}
-                            }
                             &::after{
                                 content:''; display:block; 
                                 width:30%; height:380px;
-                                // background:rgba(255,255,255,0.5);
                                 background-image: url(../img/pixel.png);
                                 background-size: 3px 3px;
                                 position:absolute; top:50%; left:39%;
@@ -76,7 +73,7 @@ $font : 'Lato';
                                     font: bold 22px/1.2 $font;color:#555;
                                 }
                                 h3{
-                                    font: bold 46px/1 $font; color:#333;
+                                    font: bold 40px/1 $font; color:#333;
                                     padding-bottom:10px; margin-bottom:20px;
                                     border-bottom:1px solid #333;
                                 }
@@ -229,6 +226,7 @@ $font : 'Lato';
             width:auto; height:auto; background:transparent;
             border-radius:0px; margin-left:40px;
             opacity:0.7;
+            font: bold 14px/1 $font; color:#333;
             &.swiper-pagination-bullet-active{
                 opacity:1;
                 font-weight: bold;
@@ -236,128 +234,188 @@ $font : 'Lato';
         }
     }
 }
-@media screen and (max-width:1179px){
+
+@media screen and (max-width:1290px){
     #wrap{
         .swiper-wrapper{
-            width:100%; height:100%; 
             .swiper-slide{
-                .inner{
-                    .tit{
-                        h1{
-                            font-size:60px;
-                        }
-                    }
-                }
+                width:80vw;
                 &[data-custom-index="0"]{
                     .inner{
-                        width:100%; height:100%;
-                        .wrap{
-                            width:100%; height:calc(100% - 81px);
-                            
-                            article{
-                                width:100%; height:100%; float:left;
-                                &:nth-of-type(1) {
-                                    width:15%; border-right:1px solid #999;
-                                }
-                                &:nth-of-type(2){
-                                    width:60%;
-                                    .txt{
-                                        p{
-                                           font-size:60px;
-                                        }
+                        article{
+                            &:first-child{
+                                    h1{
+                                        width:25vw; 
+                                        font-size:38px;
+                                        left:33%; 
                                     }
-                                   
+                                &::after{
+                                    width:25vw; left:33%;
                                 }
-                                &:nth-of-type(3){
-                                    width:25%; height:100%;
-                                    display:flex; flex-wrap: wrap;
-                                    h2{
-                                        font-size:26px;
-                                        
+                            }
+                            &:last-child{
+                                .profile{
+                                    h2{ font-size:18px; }
+                                    h3{ font-size:36px; }
+                                }
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="1"],&[data-custom-index="2"],&[data-custom-index="3"]{
+                    .inner{
+                        article{
+                            &:nth-of-type(1){
+                                >.wrap{
+                                    padding:0 20px;
+                                    .main_tit{
+                                        span{ font-size:40px; }
+                                        h1{ font-size:24px; }
                                     }
-                                    .intro{
+                                }
+                                
+                            }
+                            &:nth-of-type(2){
+                                >.wrap{
+                                    padding:0 30px;
+                                    p{
+                                        letter-spacing: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                &[data-custom-index="4"]{
+                    >.inner{
+                        >.wrap{
+                            .info{
+                                >h1{
+                                    font:bold 36px/1 $font;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .swiper-button-next{ right:10vw; }
+        .swiper-button-prev{ right:calc(10vw + 50px); }
+        .swiper-pagination{
+           right:10vw;
+            span{ margin-left:20px; }
+        }
+    }
+    
+}
+
+@media screen and (max-width:960px){
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                
+                &[data-custom-index="0"]{
+                    .inner{
+                        article{
+                            &:first-child{
+                                    h1{
+                                        width:30vw;
+                                    }
+                                &::after{
+                                    width:30vw;
+                                }
+                            }
+                            &:last-child{
+                                .profile{
+                                    h2{ font-size:16px; }
+                                    h3{ font-size:32px; }
+                                    p{ font-size:12px; }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    #wrap{
+        .swiper-wrapper{
+            .swiper-slide{
+                width:90vw;
+                &[data-custom-index="0"]{
+                    .inner{
+                        article{
+                            &:first-child{
+                                width:40%;
+                                    h1{
+                                        width:40vw; left:25%;
+                                        font-size:30px;
+                                    }
+                                &::after{
+                                    width:40vw; left:25%;
+                                }
+                            }
+                            &:last-child{
+                                .profile{
+                                    h2{ font-size:14px; }
+                                    h3{ font-size:28px; }                              }
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="1"],&[data-custom-index="2"],&[data-custom-index="3"]{
+                    .inner{
+                        article{
+                            &:nth-of-type(1){
+                                >.wrap{
+                                    .main_tit{
+                                        span{ font-size:30px; }
+                                        h1{ font-size:18px; }
+                                    }
+                                }
+                                
+                            }
+                            &:nth-of-type(2){
+                                >.wrap{
+                                    padding:0 20px;
+                                    h2{ font-size:16px; }
+                                    p{ font-size:12px; }
+                                    a{ width:80px; font-size:12px; }
+                                }
+                            }
+                        }
+                    }
+                }
+                &[data-custom-index="4"]{
+                    >.inner{
+                        >.wrap{
+                            .info{
+                                >h1{
+                                    font-size:28px;
+                                }
+                            }
+                            .myForm{
+                                #contact-form{
+                                    padding:0 20px;
+                                    article label{
                                         font-size:12px;
                                     }
-                                    
-                                }
-                            }
-                            
-                        }
-                    }
-                }
-                &[data-custom-index="1"]{
-                    .wrap{
-                        article{
-                            span{
-                                font-size:40px;
-                            }
-                            .txt{
-                                width:100%; padding:10px;
-                                h2{
-                                    font-size:20px;
-                                }
-                                p{
-                                    font-size:12px; line-height:1.6;
-                                }
-                            }
-                        }
-                    }
-                }
-    
-                &[data-custom-index="2"]{
-                    .wrap{
-                        .info{
-                            padding:150px 20px 0px 20px;
-                            h2{
-                                font-size:22px;
-                            }
-                            dl{
-                                dt{
-                                    font-size:14px;
-                                }
-                                dd{
-                                    font-size:14px;
-                                }
-                            }
-                        }
-    
-                        #contact-form{
-                            width:60%; height:100%; float:left;
-                            padding:40px 0px 0px 50px;
-                            legend{
-                                font-size:28px;
-                            }
-                            article{
-                                width:100%;
-                                label{
-                                    font-size:12px;
                                 }
                             }
                         }
                     }
                 }
             }
-        }
-        .swiper-button-next{
-            top:auto; bottom:5vh; right:20vw;
-            transform:scale(0.5); filter:brightness(0%);
-            opacity: 0.7;
-        }
-        .swiper-button-prev{
-            top:auto; bottom:5vh; left:auto; right:calc(20vw + 50px);
-            transform:scale(0.5); filter:brightness(0%); opacity: 0.7;
-        }
+        }   
+        .swiper-button-next{ right:5vw; }
+        .swiper-button-prev{ right:calc(5vw + 50px);  }
         .swiper-pagination{
-            position:absolute; height:6vh;left:auto; width:auto; right:20vw; top:5vh; 
-            span{
-                width:auto; height:auto; background:transparent;
-                border-radius:0px; margin-left:40px;
-                opacity:0.7;
-                &.swiper-pagination-bullet-active{
-                    opacity:1;
-                    font-weight: bold;
-                }
-            }
+            right:5vw;
+            span{ margin-left:15px; font-size:12px; }
         }
     }
 }
